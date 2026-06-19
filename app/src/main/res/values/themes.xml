@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://tools.android.com">
+    <style name="Base.Theme.Dialiease2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:fontFamily">@font/agdasima_font_family</item>
+
+        <item name="android:alertDialogTheme">@style/App.AlertDialogStyle</item>
+        <item name="android:datePickerDialogTheme">@style/App.DatePickerDialogStyle</item>
+        <item name="android:timePickerDialogTheme">@style/App.TimePickerDialogStyle</item>
+
+        <item name="alertDialogTheme">@style/App.AlertDialogStyle</item>
+    </style>
+
+    <style name="Theme.Dialiease2" parent="Base.Theme.Dialiease2" />
+
+</resources>

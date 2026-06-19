@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+    <Spinner android:minHeight="48dp" android:id="@+id/daySpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="visible"/>
+    <Spinner android:minHeight="48dp" android:id="@+id/shiftSpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    <!--  START TIME + AM/PM  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp">
+        <EditText android:minHeight="48dp" android:id="@+id/startTimeInput" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:hint="Start Time (e.g. 6:00)" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:cursorVisible="false" android:inputType="none"/>
+        <Spinner android:minHeight="48dp" android:id="@+id/startAmPmSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:entries="@array/am_pm_options"/>
+    </LinearLayout>
+    <!--  END TIME + AM/PM  -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp">
+        <EditText android:minHeight="48dp" android:id="@+id/endTimeInput" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:hint="End Time (e.g. 9:00)" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:cursorVisible="false" android:inputType="none"/>
+        <Spinner android:minHeight="48dp" android:id="@+id/endAmPmSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:entries="@array/am_pm_options"/>
+    </LinearLayout>
+    <Button android:id="@+id/clearButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Request Clear" android:layout_marginTop="12dp"/>
+</LinearLayout>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppEditText">
+        <item name="android:background">@drawable/edittext_background</item>
+        <item name="android:fontFamily">@font/agdasima_regular</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#9E9E9E</item>
+    </style>
+
+    <style name="App.Dialog.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/agdasima_bold</item>
+        <item name="android:textColor">@color/blacks</item>
+    </style>
+
+    <style name="App.Dialog.Message" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/agdasima_regular</item>
+        <item name="android:textColor">@color/blacks</item>
+    </style>
+
+    <style name="App.Dialog.Button" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+
+        <item name="android:fontFamily">@font/agdasima_bold</item>
+        <item name="android:textColor">@color/blacks</item>
+    </style>
+
+    <style name="App.AlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:background">@color/white</item> <item name="android:windowTitleStyle">@style/App.Dialog.Title</item>
+        <item name="android:textViewStyle">@style/App.Dialog.Message</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/App.Dialog.Button</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/App.Dialog.Button</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/App.Dialog.Button</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/App.Dialog.Title</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/App.Dialog.Message</item>
+    </style>
+
+    <style name="App.DatePickerDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/blacks</item> <item name="android:fontFamily">@font/agdasima_regular</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/App.Dialog.Button</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/App.Dialog.Button</item>
+    </style>
+
+    <style name="App.TimePickerDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+
+        <item name="colorPrimary">@color/blacks</item> <item name="android:fontFamily">@font/agdasima_regular</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/App.Dialog.Button</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/App.Dialog.Button</item>
+    </style>
+
+</resources>

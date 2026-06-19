@@ -1,0 +1,437 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnUniversalCopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copy a Schedule to Multiple Days..."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:text="Monday"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+        <Spinner
+            android:minHeight="48dp"
+            android:id="@+id/shiftSpinnerMonday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/startTimeInputMonday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="Start Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/startAmPmSpinnerMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/endTimeInputMonday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="End Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/endAmPmSpinnerMonday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Tuesday"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:minHeight="48dp"
+            android:id="@+id/shiftSpinnerTuesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/startTimeInputTuesday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="Start Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/startAmPmSpinnerTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/endTimeInputTuesday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="End Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/endAmPmSpinnerTuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Wednesday"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:minHeight="48dp"
+            android:id="@+id/shiftSpinnerWednesday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/startTimeInputWednesday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="Start Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/startAmPmSpinnerWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/endTimeInputWednesday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="End Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/endAmPmSpinnerWednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Thursday"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:minHeight="48dp"
+            android:id="@+id/shiftSpinnerThursday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/startTimeInputThursday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="Start Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/startAmPmSpinnerThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/endTimeInputThursday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="End Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/endAmPmSpinnerThursday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Friday"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:minHeight="48dp"
+            android:id="@+id/shiftSpinnerFriday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/startTimeInputFriday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="Start Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/startAmPmSpinnerFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/endTimeInputFriday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="End Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/endAmPmSpinnerFriday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="Saturday"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:minHeight="48dp"
+            android:id="@+id/shiftSpinnerSaturday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/startTimeInputSaturday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="Start Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/startAmPmSpinnerSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp">
+
+            <EditText
+                android:id="@+id/endTimeInputSaturday"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="End Time"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"/>
+
+            <Spinner
+                android:minHeight="48dp"
+                android:id="@+id/endAmPmSpinnerSaturday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/am_pm_options"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
